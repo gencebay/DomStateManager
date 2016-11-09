@@ -6,6 +6,9 @@
         "module": "commonjs",
         "target": "es2015"
     },
+    "includes":[
+        "node_modules/@types/jquery/index.d.ts"
+    ],
     "files": [
         "src/utils/domExplorer.ts",
         "src/domStateStorage.ts"

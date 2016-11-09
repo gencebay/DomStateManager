@@ -46,6 +46,21 @@ gulp.task("html", function () {
         .pipe(gulp.dest("dist"));
 });
 
+gulp.task("build", function() {
+    var tsResult = tsProject.src() // instead of gulp.src(...) 
+        .pipe(tsProject());
+ 
+    return tsResult.js.pipe(gulp.dest('build'));
+});
+
+gulp.task("bundle", function(){
+ return watchedBrowserify
+        .bundle()
+        .pipe(source('domStateStorage.js'))
+        .pipe(gulp.dest("dist"))
+        .pipe(connect.reload());
+});
+
 gulp.task("default", ["html", "connect"], function () {
     return bundle()
     .pipe(buffer())

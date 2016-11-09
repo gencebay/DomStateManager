@@ -1,4 +1,4 @@
-/// <reference path="../../typings/index.d.ts" />
+/// <reference path="../../node_modules/@types/jquery/index.d.ts" />
 
 export class DomExplorer {
     private defaultSelector:string;
@@ -7,7 +7,7 @@ export class DomExplorer {
     }
 
     public processOperator(selector: string) : NodeListOf<Element> {
-        // querySelectorAll with selector key
+        // querySelectorAll with selector key //
         var $dom = $(selector);
         return document.querySelectorAll(selector);
     }
