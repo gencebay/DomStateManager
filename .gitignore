@@ -1,0 +1,16 @@
+.DS_Store
+.swp
+bower_components
+node_modules
+components
+
+*.log
+
+*.DS_STORE
+build/
+.cache
+
+# YARD artifacts
+.yardoc
+_yardoc
+doc/

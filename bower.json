@@ -1,0 +1,29 @@
+{
+  "name": "domstatestorage",
+  "description": "Dom State Storage",
+  "main": "dist/domStateStorage.js",
+  "authors": [
+    "gencebay"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "dom",
+    "localStorage",
+    "state"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "requirejs": "^2.3.2",
+    "mocha": "^3.1.2"
+  },
+  "dependencies": {
+    "localforage": "^1.4.3"
+  }
+}
